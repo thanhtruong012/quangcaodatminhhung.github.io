@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quảng Cáo Đạt Minh Hưng</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background-color: #c0392b; color: white; padding: 20px; text-align: center; font-size: 24px; }
-    nav { background: #e74c3c; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 20px; max-width: 1000px; margin: auto; }
-    .image-gallery img { max-width: 200px; margin: 10px; border: 1px solid #ccc; border-radius: 5px; }
-    .download-btn { display: inline-block; margin-top: 10px; padding: 8px 12px; background-color: #27ae60; color: white; text-decoration: none; border-radius: 5px; }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fefefe;
+    }
+    header {
+      background: #f2c200;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      background: #ffd633;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-left: 5px solid #f2c200;
+      padding-left: 1rem;
+      color: #444;
+    }
+    .design {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .design-item {
+      flex: 1 1 250px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .design-item img {
+      width: 100%;
+      height: auto;
+    }
+    .design-item div {
+      padding: 1rem;
+    }
+    .download-btn {
+      background: #f2c200;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .phone {
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
@@ -20,7 +86,7 @@
   <nav>
     <a href="#gioithieu">Giới thiệu</a>
     <a href="#kho">Kho thiết kế</a>
-    <a href="#phanhoi">Khách hàng</a>
+    <a href="#khachhang">Khách hàng</a>
     <a href="#lienhe">Liên hệ</a>
   </nav>
 
@@ -31,21 +97,25 @@
 
   <section id="kho">
     <h2>Kho thiết kế</h2>
-    <div class="image-gallery">
-      <div>
-        <img src="https://via.placeholder.com/200x120?text=Thiết+kế+1" alt="Thiết kế 1">
-        <p>Backdrop Ngày Hội Văn Hóa</p>
-        <a href="#" class="download-btn">Tải về</a>
+    <div class="design">
+      <div class="design-item">
+        <img src="https://via.placeholder.com/300x200?text=Thi%E1%BA%BFt+k%E1%BA%BF+1" alt="Thiết kế 1">
+        <div>
+          <p>Backdrop Ngày Hội Văn Hóa</p>
+          <a class="download-btn" href="#">Tải về</a>
+        </div>
       </div>
-      <div>
-        <img src="https://via.placeholder.com/200x120?text=Thiết+kế+2" alt="Thiết kế 2">
-        <p>Góc đọc thân thiện</p>
-        <a href="#" class="download-btn">Tải về</a>
+      <div class="design-item">
+        <img src="https://via.placeholder.com/300x200?text=Thi%E1%BA%BFt+k%E1%BA%BF+2" alt="Thiết kế 2">
+        <div>
+          <p>Góc đọc thân thiện</p>
+          <a class="download-btn" href="#">Tải về</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="phanhoi">
+  <section id="khachhang">
     <h2>Khách hàng nói gì?</h2>
     <p>"Thi công đúng tiến độ, thiết kế đẹp, rất hài lòng!" – Trường Tiểu học Quang Trung</p>
     <p>"Biển quảng cáo chất lượng, đội ngũ thân thiện." – Khách hàng tại Uông Bí</p>
@@ -53,12 +123,12 @@
 
   <section id="lienhe">
     <h2>Liên hệ</h2>
-    <p>📞 0987.68.44.88 – 0973.76.9986</p>
-    <p>🏠 Số 221 Quang Trung, TP Uông Bí, Quảng Ninh</p>
+    <p class="phone">📞 0987.68.44.88 – 0973.76.9986</p>
+    <p>📍 Số 221 Quang Trung - Uông Bí - Quảng Ninh</p>
   </section>
 
   <footer>
-    © 2025 Quảng Cáo Đạt Minh Hưng. All rights reserved.
+    &copy; 2025 Quảng Cáo Đạt Minh Hưng. All rights reserved.
   </footer>
 </body>
 </html>
