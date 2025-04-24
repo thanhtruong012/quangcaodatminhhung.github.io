@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quảng Cáo Đạt Minh Hưng</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #111; }
-    header { background: #f1b600; color: white; padding: 16px 0; text-align: center; font-size: 20px; font-weight: bold; }
+    body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding: 0; }
+    header { background: #f5b800; padding: 20px; text-align: center; font-size: 22px; font-weight: bold; color: white; }
     nav { background: #ffd966; padding: 10px 0; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: black; font-weight: bold; }
-    .container { max-width: 960px; margin: auto; padding: 20px; }
-    h2 { color: #000; margin-top: 40px; }
-    .card { background: #fff; padding: 20px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-    .card img { max-width: 100%; height: auto; border-radius: 4px; }
-    .card h3 { margin-top: 10px; font-size: 18px; }
-    .download-btn { background: #f1b600; color: black; padding: 10px 16px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
-    footer { text-align: center; padding: 20px; font-size: 14px; color: #555; }
-    .contact-info { margin-top: 40px; }
+    nav a { margin: 0 15px; color: #000; text-decoration: none; font-weight: bold; }
+    section { max-width: 1000px; margin: auto; padding: 20px; }
+    h2 { color: #000; }
+    .design-card { border: 1px solid #eee; border-radius: 6px; padding: 15px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .design-card img { max-width: 100%; height: auto; border-radius: 4px; }
+    .download-btn { background-color: #f5b800; color: black; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+    footer { text-align: center; font-size: 14px; padding: 20px; color: #555; }
+    .contact { margin-top: 40px; }
   </style>
 </head>
 <body>
@@ -26,34 +25,35 @@
     <a href="#kho">Kho thiết kế</a>
     <a href="#lienhe">Liên hệ</a>
   </nav>
-  <div class="container">
-    <section id="gioithieu">
-      <h2>Giới thiệu cửa hàng</h2>
-      <p>Chúng tôi chuyên thiết kế và thi công bảng hiệu, pano, backdrop,... tại Uông Bí, Quảng Ninh. Slogan: <strong>"Chữ đẹp dựng thương hiệu"</strong>.</p>
-    </section>
 
-    <section id="kho">
-      <h2>Kho thiết kế</h2>
+  <section id="gioithieu">
+    <h2>Giới thiệu cửa hàng</h2>
+    <p>Chúng tôi chuyên thiết kế và thi công bảng hiệu, pano, backdrop,... tại Uông Bí, Quảng Ninh. Slogan: <strong>"Chữ đẹp dựng thương hiệu".</strong></p>
+  </section>
 
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/thanhtruong012/quangcaodatminhhung.github.io/main/assets/z6493688288467_4bf7dcbe17452b5f3b09a074757e7717.jpg" alt="Thiết kế 1">
-        <h3>Backdrop Ngày Hội Văn Hóa</h3>
-        <button class="download-btn">Tải về</button>
-      </div>
+  <section id="kho">
+    <h2>Kho thiết kế</h2>
+    <div class="design-card">
+      <img src="https://raw.githubusercontent.com/thanhtruong012/quangcaodatminhhung.github.io/main/images/z6493688288467_4bf7dcbe17452b5f3b09a074757e7717.jpg" alt="Thiết kế 1">
+      <p><strong>Backdrop Ngày Hội Văn Hóa</strong></p>
+      <button class="download-btn">Tải về</button>
+    </div>
 
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/thanhtruong012/quangcaodatminhhung.github.io/main/assets/z6494729052229_34599f4a074367780681c937821c1e98.jpg" alt="Thiết kế 2">
-        <h3>Góc đọc thân thiện</h3>
-        <button class="download-btn">Tải về</button>
-      </div>
-    </section>
+    <div class="design-card">
+      <img src="https://raw.githubusercontent.com/thanhtruong012/quangcaodatminhhung.github.io/main/images/z6494729052229_34599f4a074367780681c937821c1e98.jpg" alt="Thiết kế 2">
+      <p><strong>Góc đọc thân thiện</strong></p>
+      <button class="download-btn">Tải về</button>
+    </div>
+  </section>
 
-    <section id="lienhe" class="contact-info">
-      <h2>Liên hệ</h2>
-      <p>📞 0987.68.44.88 – 0973.76.9986</p>
-      <p>📍 Địa chỉ: Số 221 Quang Trung, Uông Bí, Quảng Ninh</p>
-    </section>
-  </div>
-  <footer>&copy; 2025 Quảng Cáo Đạt Minh Hưng. All rights reserved.</footer>
+  <section id="lienhe" class="contact">
+    <h2>Liên hệ</h2>
+    <p>📞 0987.68.44.88 – 0973.76.9986</p>
+    <p>📍 Địa chỉ: Số 221 Quang Trung, Uông Bí, Quảng Ninh</p>
+  </section>
+
+  <footer>
+    © 2025 Quảng Cáo Đạt Minh Hưng. All rights reserved.
+  </footer>
 </body>
 </html>
